@@ -1,14 +1,25 @@
+#!/usr/bin/env python
+"""The file contains the custom-built wrappers for the rossmann sales challenge"""
+__author__ = "Agoston Torok, Krisztian Varga, and Balazs Feher"
+__copyright__ = "Copyright 2016, YetAnotherDirtyKeltaGod team"
+__license__ = "MIT"
+__version__ = "0.0.1"
+__maintainer__ = "Agoston Torok"
+__email__ = "torokagoston@gmail.com"
+__status__ = "Prototype"
+
+
+import sys
+import pickle
+import time
+import logging
+import itertools
 from scipy.spatial.distance import cdist
 import scipy.cluster.hierarchy as sch
 import pandas as pd
 import matplotlib
 import matplotlib.pyplot as plt
 import numpy as np
-import sys
-import pickle
-import time
-import logging
-import itertools
 
 print('Rossmann Helper Functions imported')
 
