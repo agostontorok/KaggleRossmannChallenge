@@ -83,6 +83,7 @@ def create_dummy_columns(df_original, columns):
         df.loc[:,columns[i]] = df.loc[:,columns[i]].astype('int').astype('str') + '_' + str(columns[i])
         df = pd.concat([df, 
                         pd.get_dummies(df.loc[:,columns[i]])], axis = 1)
+    df = df.drop(columns, axis =1)
     return df
 
 
